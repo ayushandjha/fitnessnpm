@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Fitness Freak
+    block scripts
+    block style
+    style 
+          include ../static/styles/basestyle.css
+      
+  body
+    nav#navbar.top 
+      div#logo 
+        img(src = "../static/img/fitness.png")
+        | FF
+      ul 
+       
+       li #[a(href = "/") Home]
+       li #[a(href = "/about") About]
+       li #[a(href = "/tips") Guide]
+       li #[a(href = "/contact") Contact Us]
+    block content
+  footer#footer 
+      | Copyright &#169 2019 fitnessfreak.com. All rights | reserved     
